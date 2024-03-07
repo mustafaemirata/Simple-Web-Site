@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(77918.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.box {
+    width: 450px;
+    background: rgba(215, 210, 184, 0.607);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.box img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.box img:hover {
+    transform: scale(0.9);
+}
+
+.box h1 {
+    font: size 40px;
+    letter-spacing: 4px;
+    font-weight: 125%;
+    text-align: center;
+}
+
+.box h5 {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+}
+
+.box p {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.box li a {
+    color: white;
+    font-size: 50px;
+    transition: all ease-in-out 260ms;
+}
+
+.box li a:hover {
+    color: cadetblue;
+}
+
+@keyframes blinking {
+    0% {
+        color: black;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.animated-text {
+    animation: blinking 1s infinite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px, 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 750;
+}
+
+.navbar a {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.yazi h5 {
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
